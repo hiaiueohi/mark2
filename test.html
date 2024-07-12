@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+  h1, div ,h4 ,form, p, a, table, input{
+      text-align:center;
+  }body {
+      background-color: #ffc;
+  }
+  body { color: #333333; }
+  a:link { color: #009900; }
+  a:visited { color: #006600; }
+  a:active { color: #ff0000; }
+  
+  a:hover { color: #e7e6ea; }
+    
+  </style>
+<title>HTMLの練習</title>
+</head>
+<body>
+<a href="javascript:history.back()">[戻る]</a>
+
+<meta http-equiv="Refresh" content="5; url=http://www.yahoo.co.jp/">
+  
+<h1>ようこそ影の書き込みサイトへ</h1>
+<p><b>検索したいことは下記の検索エンジンから|^^|^</b></p>
+<form action="http://www.goo.ne.jp/default.asp">
+  <input type=text name="MT" size=20>
+  <input type=submit value="検索" name="act.search">
+  <input type="hidden" name="SM" value="MC">
+  <input type=hidden name="RD" value="DM">
+  <input type=hidden name="Domain" value="www.tohoho-web.com">
+  <input type=hidden name="Path" value="">
+  <input type=hidden name="from" value="USR">
+  <input type=hidden name="DC" value="50">
+  (by <a href="http://www.goo.ne.jp">Goo</a>)
+  </form>
+
+<script>
+alert("come to the hell!");
+</script>
+
+<h4 id="nameLink">ページの途中にリンクするには</h4>
+
+<p>あなたがこのサイトに訪れた時間↓↓↓</p>
+
+<b><div id="d1"></div>
+<script>
+document.getElementById("d1").innerHTML = new Date().toLocaleString();
+</script></b>
+
+<p>現在時刻↓↓↓</p>
+
+<b><div id="d2">&nbsp;</div>
+<script>
+setInterval(function() {
+document.getElementById("d2").innerHTML = new Date().toLocaleString();
+}, 1000);
+</script></b>
+
+<h4 id = "yahooへのリンク" >ジャンプページ</h4>
+<p>・このジャンプページは以下のコナンの絵の上の"ジャンプ"からくることができる</p>
+
+<a href="http://www.yahoo.co.jp/" style="color:red">Yahoo!</a><br>
+
+<input type="button" value="Click Me!!" onclick="alert('おーす未来のチャンピオン!!')"><br>
+
+<a href="javascript:alert('おーす！未来のチャンピオン!!')">Click Me!!</a><br>
+
+
+<table border=1>
+  <tr　style="background-color:yellow"><td><b>活動歴</b></td><td><b>趣味</b></td><td><b>体重増加の件</b></td></tr>
+  <tr><td>1週間</td><td>パソコンと読書</td><td>十月には80キロ切る</td></tr>
+</table><br>
+
+<a href="#yahooへのリンク">ジャンプ</a><br>
+<a href = "https://www.conan-portal.com"><img src="conan photo.jpg" width=300 height=200 alt="バーロー"></a><br>
+
+<audio src="./audio/sound.mp3" autoplay loop></audio>
+<audio id="audio1" src="./audio/sound.mp3" autoplay loop></audio>
+<input type="button" value="Pause" onclick="document.getElementById('audio1').pause()">
+<input type="button" value="Play" onclick="document.getElementById('audio1').play()">
+
+<pre>
+  // ソースコード表示などにおすすめ
+  main()
+  {
+      printf("hello, world");
+  }
+</pre>
+
+<nobr>この文章はブラウザの横幅に関わらず改行されません。jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjkjjimiomo;k:opk;:oiomm</nobr>
+
+<table border = 1>
+  <tr><td nowrap>この文章も改行されません。</td></tr>
+  <tr><td nowrap>この文章も改行されません。</td></tr>
+</table>
+
+<script>
+  window.addEventListener("load", function() {
+      setInterval(function() {
+          var objs = document.getElementsByClassName("blink");
+          for (var i = 0; i < objs.length; i++) {
+              obj = objs[i];
+              if (obj.style.visibility == "visible") {
+                  obj.style.visibility = "hidden";
+              } else {
+                  obj.style.visibility = "visible";
+              }
+          }
+      }, 100);
+  });
+  </script>
+  <div class="blink">点滅している</div>
+
+  <a href="http://www.tohoho-web.com/how2/link.htm">リンク</a><br>
+
+  
+  <a href="#nameLink">ページの途中にリンクするには</a>
+
+
+</body>
+</html>
