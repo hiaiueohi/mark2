@@ -3,7 +3,7 @@ marp: true
 theme: uncover
 ---
 <!--
-_backgroundColor: black
+_backgroundColor: blue
 _color: white
 _footer: 'Photo by Benjamin Rascoe on Unsplash'
 -->
@@ -13,12 +13,13 @@ _footer: 'Photo by Benjamin Rascoe on Unsplash'
 # タイトル全面背景
 
 
-Brightnessを落とし、文字の視認性を上げました
+標識みたいな色合いにしてみました
 
 
 ---
 <!--
-_backgroundColor: orange
+_backgroundColor: black
+_color: white
 paginate: true
 _footer: 'Photo by Michal Vasko　on Unsplash'
 -->
